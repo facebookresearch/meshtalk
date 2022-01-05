@@ -13,7 +13,7 @@ This repository contains code to run [MeshTalk](https://openaccess.thecvf.com/co
 ```
 
 ## Supplemental Material
-[![Watch the video](https://github.com/facebookresearch/meshtalk/blob/main/supplemental_video.png)](https://research.fb.com/wp-content/uploads/2021/04/mesh_talk.mp4)
+[![Watch the video](https://github.com/facebookresearch/meshtalk/blob/main/supplemental_video.png)](https://www.facebook.com/MetaResearch/videos/251508987094387/)
 
 ## Running MeshTalk
 
