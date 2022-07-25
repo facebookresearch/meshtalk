@@ -40,7 +40,7 @@ See a description of command line arguments via `python animate_face.py --help`.
 
 ### Training your own MeshTalk version
 
-We are in the process of releasing high-quality 3D face captures of 16 subjects (a subset of the dataset used in this paper). We will link to the dataset here once it is available.
+A subset of the data (13 subjects) has been released as our [Multiface](https://github.com/facebookresearch/multiface) dataset. The dataset includes tracked meshes and audio files.
 
 ## License
 
