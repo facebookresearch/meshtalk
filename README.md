@@ -42,6 +42,18 @@ See a description of command line arguments via `python animate_face.py --help`.
 
 A subset of the data (13 subjects) has been released as our [Multiface](https://github.com/facebookresearch/multiface) dataset. The dataset includes tracked meshes and audio files.
 
+Note that the geometries in multiface have a slightly different topology than in meshtalk. To convert geometries from multiface to meshtalk, run
+```
+python utils/multiface2meshtalk.py <multiface_mesh.bin> <output.bin>
+```
+on the `.bin` files containing the vertex positions of the multiface meshes.
+
+Once converted, you can load the new meshes with
+```
+geom = np.fromfile("my_converted_geometry.bin", dtype=np.float32).reshape(6172, 3)
+```
+and use the vertex positions with the topology defined in `assets/face_template.obj`.
+
 ## License
 
 The code and dataset are released under [CC-NC 4.0 International license](https://github.com/facebookresearch/BinauralSpeechSynthesis/blob/main/LICENSE).
