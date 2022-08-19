@@ -46,7 +46,7 @@ Note that the geometries in multiface have a slightly different topology than in
 ```
 python utils/multiface2meshtalk.py <multiface_mesh.bin> <output.obj>
 ```
-on the `.bin` files containing the vertex positions of the multiface meshes. Note that the input must be the `.bin` files from the `tracked_meshes` directories in multiface, **not** the `.obj` files. The output is a `.obj` file in the same format as `assets/face_template.obj`.
+on the `.bin` files containing the vertex positions of the multiface meshes. Note that the input must be the `.bin` files from the `tracked_mesh` directories in multiface, **not** the `.obj` files. The output is a `.obj` file in the same format as `assets/face_template.obj`.
 
 ## License
 
