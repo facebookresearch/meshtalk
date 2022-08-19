@@ -44,15 +44,9 @@ A subset of the data (13 subjects) has been released as our [Multiface](https://
 
 Note that the geometries in multiface have a slightly different topology than in meshtalk. To convert geometries from multiface to meshtalk, run
 ```
-python utils/multiface2meshtalk.py <multiface_mesh.bin> <output.bin>
+python utils/multiface2meshtalk.py <multiface_mesh.bin> <output.obj>
 ```
-on the `.bin` files containing the vertex positions of the multiface meshes.
-
-Once converted, you can load the new meshes with
-```
-geom = np.fromfile("my_converted_geometry.bin", dtype=np.float32).reshape(6172, 3)
-```
-and use the vertex positions with the topology defined in `assets/face_template.obj`.
+on the `.bin` files containing the vertex positions of the multiface meshes. Note that the input must be the `.bin` files from the `tracked_meshes` directories in multiface, **not** the `.obj` files. The output is a `.obj` file in the same format as `assets/face_template.obj`.
 
 ## License
 
